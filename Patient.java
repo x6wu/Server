@@ -39,9 +39,7 @@ public class Patient {
 	}
 	
 	public void setDob(Date dob){
-		this.dob.setDay(dob.getDay());
-		this.dob.setMonth(dob.getMonth());
-		this.dob.setYear(dob.getYear());
+		this.dob = dob;
 	}
 	
 	public void setComments(String comments){

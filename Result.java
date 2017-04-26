@@ -1,40 +1,62 @@
-package server;
-
+/**
+ * @author Xinyu
+ * @version 1.0
+ * @since 2017-04-25
+ * 
+ * Result contains information about a test result including the current
+ * treatment the patient is on, the time when result comes in and a report.
+ */
 public class Result {
 	private Time time;
 	private String report;
 	private Treatment currTreatment;
 	
+	
+	/**
+	 * Creates a new Result
+	 */
 	public Result(){
 	}
 	
+	/**
+	 * 
+	 * @param time
+	 */
 	public void setTime(Time time){
-		this.time.setHour(time.getHour());
-		this.time.setMin(time.getMin());
-		this.time.setSec(time.getSec());
-		this.time.setDay(time.getDay());
-		this.time.setMonth(time.getMonth());
-		this.time.setYear(time.getYear());
+		this.time = time;
 	}
 	
+	/**
+	 * @param report
+	 */
 	public void setReport(String report){
 		this.report = report;
 	}
 	
+	/**
+	 * @param treatment
+	 */
 	public void setCurrTreatment(Treatment treatment){
-		this.currTreatment.setName(treatment.getName());
-		this.currTreatment.setStartDate(treatment.getStartDate());
-		this.currTreatment.setEndDate(treatment.getEndDate());
+		this.currTreatment = treatment;
 	}
 	
+	/**
+	 * @return
+	 */
 	public Time getTime(){
 		return this.time;
 	}
 	
+	/**
+	 * @return
+	 */
 	public String getReport(){
 		return this.report;
 	}
 	
+	/**
+	 * @return
+	 */
 	public Treatment getTreatment(){
 		return this.currTreatment;
 	}

@@ -28,15 +28,11 @@ public class Treatment {
 	}
 	
 	public void setStartDate(Time start){
-		this.startDate.setYear(start.getYear());
-		this.startDate.setMonth(start.getMonth());
-		this.startDate.setDay(start.getDay());
+		this.startDate = start;
 	}
 	
 	public void setEndDate(Time end){
-		this.endDate.setYear(end.getYear());
-		this.endDate.setMonth(end.getMonth());
-		this.endDate.setDay(end.getDay());
+		this.endDate = end;
 	}
 	
 	/**
