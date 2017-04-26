@@ -1,44 +1,47 @@
 package server;
 
-public class Time {
-	private int year;
-	private int month;
-	private int day;
+/**
+ * 
+ * @author Xinyu
+ * @version 1.0
+ * @since 2017-04-25
+ *
+ * Represents a date 
+ */
 
+public class Time extends Date{
+	private int hour;
+	private int min;
+	private int sec;
+
+	/**
+	 * Creates a new Time.
+	 */
 	public Time(){
 	}
 
-	public void setYear(int year){
-		this.year = year;
+	public void setHour(int hour){
+		this.hour = hour;
 	}
 
-	public void setMonth(int month){
-		this.month = month;
+	public void setMin(int min){
+		this.min = min;
 	}
 
-	public void setDay(int day){
-		this.day = day;
+	public void setSec(int sec){
+		this.sec = sec;
 	}
 
-	/*
-	public void setTime(Time time){
-		this.year = time.getYear();
-		this.month = time.getMonth();
-		this.day = time.getDay();
-
-	}
-	*/
-
-	public int getYear(){
-		return this.year;
+	public int getHour(){
+		return this.hour;
 	}
 
-	public int getMonth(){
-		return this.month;
+	public int getMin(){
+		return this.min;
 	}
 
-	public int getDay(){
-		return this.day;
+	public int getSec(){
+		return this.sec;
 	}
 
 }

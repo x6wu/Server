@@ -3,12 +3,15 @@ package server;
 public class Result {
 	private Time time;
 	private String report;
-	private Treatment currTreatment = new Treatment();
+	private Treatment currTreatment;
 	
 	public Result(){
 	}
 	
 	public void setTime(Time time){
+		this.time.setHour(time.getHour());
+		this.time.setMin(time.getMin());
+		this.time.setSec(time.getSec());
 		this.time.setDay(time.getDay());
 		this.time.setMonth(time.getMonth());
 		this.time.setYear(time.getYear());

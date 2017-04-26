@@ -9,8 +9,8 @@ package server;
  */
 public class Treatment {
 	private String name;
-	private Time startDate = new Time();
-	private Time endDate = new Time();
+	private Time startDate;
+	private Time endDate;
 	
 	
 	/** 

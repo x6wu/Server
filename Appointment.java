@@ -1,13 +1,16 @@
 package server;
 
 public class Appointment {
-	private Time date = new Time();
+	private Time date;
 	private String doctor;
 	
 	public Appointment(){
 	}
 	
 	public void setDate(Time date){
+		this.date.setHour(date.getHour());
+		this.date.setMin(date.getMin());
+		this.date.setSec(date.getSec());
 		this.date.setDay(date.getDay());
 		this.date.setMonth(date.getMonth());
 		this.date.setYear(date.getYear());
