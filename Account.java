@@ -2,7 +2,7 @@
 /**
  * @author Aymane (Ben) Chafik
  * @version 0
- * @date 4/20/17
+ * @since 4/20/17
  * 
  * Account is the abstract class which contains
  * everything an object representing an account needs

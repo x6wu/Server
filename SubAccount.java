@@ -2,7 +2,7 @@
 /**
  * @author Aymane (Ben) Chafik
  * @version 0
- * @date 4/20/17
+ * @since 4/20/17
  * 
  * SubAccount is a child of Account. It's used for doctors within
  * a specific hospital. The only extra information as of now is a

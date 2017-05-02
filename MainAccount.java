@@ -3,7 +3,7 @@ import java.util.List;
 /**
  * @author Aymane (Ben) Chafik
  * @version 0
- * @date 4/20/17
+ * @since 4/20/17
  * 
  * MainAccount is a child of Account. It's used to give hospitals
  * one giant account that sub-accounts can link to. Contains the name of the
