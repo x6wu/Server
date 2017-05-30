@@ -41,9 +41,35 @@ public class PatientController {
 
   //TBA
   @RequestMapping(value="/", method=RequestMethod.GET)
-  public void getReq( ) {
-    //TBA
+  public List<Patient> getReq(@RequestBody RequestWrapper req){
+    if(req.getIDs() != null){
+      List<Patient> patients = patientGetter(req.getIDs());
+    }
+    else{
+      return null;
+    }
   }
+
+  /**
+   * Helper method that retrieves a list of Patient object
+   *
+   * @param IDs The list containing IDs of patients to be retrieved
+   */
+  private List<Patient> patientGetter(List<String> IDs){
+    if(patients == null || IDs.size() == 0){
+      return;
+    }
+    List<Patient> patients = new LinkedList<Patient>;
+    for(String ID: IDs){
+      if(patientsMap.get(ID) != null){
+        patients.add(patientsMap.get(ID));
+      }
+    }
+    return patients;
+  }
+      
+
+
 
   /**
    * Helper method that adds a list of Patient object to the
