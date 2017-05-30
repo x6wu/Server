@@ -1,7 +1,5 @@
+package server;
 import java.util.*;
-
-
-
 /**
  * @author Aymane (Ben) Chafik - Xinyu
  * @version 0
